@@ -1,0 +1,23 @@
+#### training:
+noise: 0.3
+
+model:
+  ema: False
+  ema_rate: 0.999
+
+## CIFAR-10
+data_dir: runs/cifar10
+dataset: CIFAR10
+nr_resnet: 5
+nr_filters: 160
+nr_logistic_mix: 10
+input_channels: 3
+
+batch_size: 80
+lr: 0.0002
+lr_decay: 0.999995
+max_epochs: 1000
+
+#### logging
+print_every: 50
+save_interval: 10

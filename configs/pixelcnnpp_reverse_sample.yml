@@ -1,0 +1,42 @@
+#### training:
+with_logit: False
+reverse_sampling: True
+
+noisy_samples_path: "runs/logs/cifar10_0.3_images/samples/samples_CIFAR10.pth"
+ema: False
+ema_rate: 0.999
+ckpt_path: runs/logs/reverse_cifar10_0.3/pixelcnn_ckpts/checkpoint.pth
+
+### CIFAR-10
+data_dir: runs/cifar10
+dataset: CIFAR10
+nr_resnet: 5
+nr_filters: 160
+nr_logistic_mix: 10
+input_channels: 3
+
+### MNIST
+#data_dir: runs/mnist
+#dataset: MNIST
+#nr_resnet: 5
+#nr_filters: 40
+#nr_logistic_mix: 10
+#input_channels: 1
+
+### celeba
+#data_dir: runs/celeba
+#dataset: celeba
+#nr_resnet: 5
+#nr_filters: 160 #80
+#nr_logistic_mix: 10
+#input_channels: 3
+
+batch_size: 200
+iteration: 1
+lr: 0.0002
+lr_decay: 0.999995
+max_epochs: 1000
+
+#### logging
+print_every: 50
+save_interval: 10
