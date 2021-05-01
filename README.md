@@ -77,7 +77,12 @@ python main.py --runner PixelCNNPPSamplerRunner --config pixelcnnpp_reverse_samp
 
 ## References and Acknowledgements
 ```
-TODO, add citation
+@article{meng2021improved,
+  title={Improved Autoregressive Modeling with Distribution Smoothing},
+  author={Meng, Chenlin and Song, Jiaming and Song, Yang and Zhao, Shengjia and Ermon, Stefano},
+  journal={arXiv preprint arXiv:2103.15089},
+  year={2021}
+}
 ```
 
 
