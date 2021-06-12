@@ -5,15 +5,15 @@ This repo contains the implementation for the paper <a href="https://openreview.
 by [Chenlin Meng](https://cs.stanford.edu/~chenlin/), [Jiaming Song](http://tsong.me), [Yang Song](http://yang-song.github.io/), [Shengjia Zhao](http://szhao.me/) and [Stefano Ermon](https://cs.stanford.edu/~ermon/), Stanford AI Lab.
 
 <p align="center">
-<img src="https://github.com/chenlin9/distribution_smoothing/blob/main/images/mnist_samples.png" width="200">
-<img src="https://github.com/chenlin9/distribution_smoothing/blob/main/images/cifar10_samples.png" width="200">
-<img src="https://github.com/chenlin9/distribution_smoothing/blob/main/images/celeba_samples.png" width="200">
+<img src="https://github.com/chenlin9/Autoregressive-Modeling-with-Distribution-Smoothing/blob/main/images/mnist_samples.png" width="200">
+<img src="https://github.com/chenlin9/Autoregressive-Modeling-with-Distribution-Smoothing/blob/main/images/cifar10_samples.png" width="200">
+<img src="https://github.com/chenlin9/Autoregressive-Modeling-with-Distribution-Smoothing/blob/main/images/celeba_samples.png" width="200">
 </p>
 
 <p align="center">
-<img src="https://github.com/chenlin9/distribution_smoothing/blob/main/images/mnist_noisy_samples.png" width="200">
-<img src="https://github.com/chenlin9/distribution_smoothing/blob/main/images/cifar10_noisy_samples.png" width="200">
-<img src="https://github.com/chenlin9/distribution_smoothing/blob/main/images/celeba_noisy_samples.png" width="200">
+<img src="https://github.com/chenlin9/Autoregressive-Modeling-with-Distribution-Smoothing/blob/main/images/mnist_noisy_samples.png" width="200">
+<img src="https://github.com/chenlin9/Autoregressive-Modeling-with-Distribution-Smoothing/blob/main/images/cifar10_noisy_samples.png" width="200">
+<img src="https://github.com/chenlin9/Autoregressive-Modeling-with-Distribution-Smoothing/blob/main/images/celeba_noisy_samples.png" width="200">
 </p>
 
 
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 ### Stage1: Learning the smoothed distribution
 <p align="center">
-<img src="https://github.com/chenlin9/distribution_smoothing/blob/main/images/smoothing.gif" width="600">
+<img src="https://github.com/chenlin9/Autoregressive-Modeling-with-Distribution-Smoothing/blob/main/images/smoothing.gif" width="600">
 </p>
 
 To train the PixelCNN++ model on the smoothed distribution for CIFAR-10, run:
@@ -39,7 +39,7 @@ python main.py --runner SmoothedPixelCNNPPTrainRunner --config pixelcnnpp_smooth
 
 ### Stage2: Reverse smoothing
 <p align="center">
-<img src="https://github.com/chenlin9/distribution_smoothing/blob/main/images/denoise.png" width="500">
+<img src="https://github.com/chenlin9/Autoregressive-Modeling-with-Distribution-Smoothing/blob/main/images/denoise.png" width="500">
 </p>
 To reverse the smoothing process, we train a second PixelCNN++ model conditioned on the smoothed distribution.
 To train the model on CIFAR-10, run:
